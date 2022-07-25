@@ -8,10 +8,39 @@
     <title>Panda-Commerce</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .hossain {
+            background-color: bisque;
+            height: 500px;
+        }
+
+        .btnn {
+            background-color: deeppink;
+        }
+
+        .h1-color {
+            color: deeppink;
+        }
+
+        .pure {
+            background-color: orange;
+            height: 150px;
+        }
+
+        .bag {
+            background-color: orchid;
+            height: 150px;
+        }
+
+        .shoes {
+            background-color: blue;
+            height: 150px;
+        }
+    </style>
 </head>
 
 <body>
-    <header>
+    <header class="container">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
                 <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
@@ -39,9 +68,116 @@
             </div>
         </nav>
     </header>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+    <!-- ------slider-start -------->
+    <section class="container mt-5">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active hossain border rounded p-5 ">
+                    <div class="row">
+                        <div class="col-lg-7 d-flex align-items-center ">
+                            <div>
+                                <h1>Mega LCD TV For Sports</h1>
+                                <p>This is The Best Tv in the world for people who just want to waste time in front of
+                                    tv
+                                </p>
+                                <h1 class="h1-color">$1200</h1>
+                                <button class="btn btnn text-white px-4 py-2" type="Buy Now">Buy Now</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <img src="images/banner-images/tv.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item active hossain border rounded p-5 ">
+                    <div class="row">
+                        <div class="col-lg-7 d-flex align-items-center ">
+                            <div>
+                                <h1>Cool Dude Headphone</h1>
+                                <p>This is the best headphone in the world for people who just want to waste time in
+                                    front of funky world.
+                                </p>
+                                <h1 class="h1-color">$420</h1>
+                                <button class="btn btnn text-white px-4 py-2" type="Buy Now">Buy Now</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <img src="images/banner-images/headphone.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item active hossain border rounded p-5 ">
+                    <div class="row">
+                        <div class="col-lg-7 d-flex align-items-center ">
+                            <div>
+                                <h1>X-Box for your living room</h1>
+                                <p>This is the best x-box in the world for people who just want to waste time in front
+                                    of fake Sports
+                                </p>
+                                <h1 class="h1-color">$600</h1>
+                                <button class="btn btnn text-white px-4 py-2" type="Buy Now">Buy Now</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <img src="images/banner-images/xbox.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <!-- --------slider-end ---------->
+
+
+    <!-- -----------catagories start --------->
+
+    <main>
+        <section>
+            <div class="container overflow-hidden text-center my-5">
+                <div class="row gy-2">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="p-4 pure d-flex align-items-center justify-content-between border rounded-3">
+                            <h1 class="text-white">Watch</h1>
+                            <img class="img-fluid" src="images/categories/watch.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="p-4 bag d-flex align-items-center justify-content-between border rounded-3">
+                            <h1 class="text-white">Bag</h1>
+                            <img class="img-fluid" src="images/categories/bag.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="p-4 shoes d-flex align-items-center justify-content-between border rounded-3">
+                            <h1 class="text-white">shoes</h1>
+                            <img class="img-fluid" src="images/categories/shoes.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- -----------catagories end --------->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
